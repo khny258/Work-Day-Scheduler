@@ -13,6 +13,7 @@ https://khny258.github.io/Work-Day-Scheduler/
 
 <strong>What The Application Should Look Like</strong>
 <br>
+<br>
 <img src="wds.gif">
 <br>
 

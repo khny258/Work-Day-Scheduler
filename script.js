@@ -1,13 +1,14 @@
+// current date format
 $(document).ready(function() {
     $("#currentDay").text(moment().format("dddd, MMMM Do, YYYY"));
 
-    
+    // for loop for time block
     for (var i = 0; i <= 8; i++) {
+        // stores info in local storage
         var storedItem = localStorage.getItem("hour-" + i);
         $("#hour-" + i + "-text").val(storedItem);
     }
 
-    
     var currentHour = moment()
         .format("LT")
         .split(":")
@@ -19,7 +20,7 @@ $(document).ready(function() {
         .pop();
 
     var isAM = (ampm == "AM") ? true : false;
-
+    
     if (isAM) {
         for (var i = 3; i <= 8; i++) {
             var hourRow = $(".hour[data-index=" + i + "]");

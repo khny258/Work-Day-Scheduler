@@ -9,24 +9,28 @@ $(document).ready(function() {
         $("#hour-" + i + "-text").val(storedItem);
     }
 
+    // current hour variable
     var currentHour = moment()
         .format("LT")
         .split(":")
         .shift();
-
+    // ampm variable
     var ampm = moment()
         .format("LT")
         .split(" ")
         .pop();
 
+    // variable to check for AM
     var isAM = (ampm == "AM") ? true : false;
-    
+
+    // if it is AM
     if (isAM) {
+        // for loop 12PM to 5PM
         for (var i = 3; i <= 8; i++) {
             var hourRow = $(".hour[data-index=" + i + "]");
             hourRow.next().addClass("future");
         }
-
+        // for loop 9AM to 11AM
         for (var i = 0; i <= 2; i++) {
             var hourRow = $(".hour[data-index=" + i + "]");
             if (hourRow.attr("data-hour") == currentHour) {
@@ -90,7 +94,7 @@ $(document).ready(function() {
         }
     }
 
-    
+    // save text function
     function saveText(event) {
         var target = event.target;
         var keyName;

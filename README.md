@@ -4,17 +4,17 @@ https://khny258.github.io/Work-Day-Scheduler/
 
 <strong>Desktop</strong>
 <br>
-<img src="desktop.png" width="75%" height="75%">
+<img src="assets/desktop.png" width="75%" height="75%">
 
 <strong>Mobile</strong>
 <br>
-<img src="mobile.png" width="25%" height="25%">
+<img src="assets/mobile.png" width="25%" height="25%">
 <br>
 
 <strong>What The Application Should Look Like</strong>
 <br>
 <br>
-<img src="wds.gif">
+<img src="assets/wds.gif">
 <br>
 
 # What I Did
